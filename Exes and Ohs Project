@@ -1,0 +1,28 @@
+function XO(str){
+
+    let xCounter =0;
+    let oCounter =0;
+
+    for (let i =0; i<str.length; i++){
+
+        let letter = str[i];
+
+
+
+        if (letter === "X" || letter === "x"){
+            xCounter++;
+        }
+        if (letter === "O" || letter === "o"){
+            oCounter++;
+        }
+
+
+    }
+
+    if (xCounter === oCounter){
+        return true;
+    }
+    else return false;
+}
+
+console.log(XO("xoxoxo"));
